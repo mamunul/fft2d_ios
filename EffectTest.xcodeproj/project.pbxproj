@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0C2D3A7E1B312D9000E72847 /* ImageProcessing.mm in Sources */ = {isa = PBXBuildFile; fileRef = 0C2D3A7D1B312D9000E72847 /* ImageProcessing.mm */; };
+		0C2D3A801B312EFE00E72847 /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C2D3A7F1B312EFE00E72847 /* Accelerate.framework */; };
+		0C2D3A821B313A6F00E72847 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C2D3A811B313A6F00E72847 /* CoreGraphics.framework */; };
 		0CB1EA0C1B3024D30028F436 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0CB1EA0B1B3024D30028F436 /* main.m */; };
 		0CB1EA0F1B3024D30028F436 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0CB1EA0E1B3024D30028F436 /* AppDelegate.m */; };
 		0CB1EA121B3024D30028F436 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0CB1EA111B3024D30028F436 /* ViewController.m */; };
@@ -27,6 +30,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0C2D3A7C1B312D9000E72847 /* ImageProcessing.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageProcessing.h; sourceTree = "<group>"; };
+		0C2D3A7D1B312D9000E72847 /* ImageProcessing.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = ImageProcessing.mm; sourceTree = "<group>"; };
+		0C2D3A7F1B312EFE00E72847 /* Accelerate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accelerate.framework; path = System/Library/Frameworks/Accelerate.framework; sourceTree = SDKROOT; };
+		0C2D3A811B313A6F00E72847 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		0CB1EA061B3024D30028F436 /* EffectTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EffectTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0CB1EA0A1B3024D30028F436 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0CB1EA0B1B3024D30028F436 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -47,6 +54,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0C2D3A821B313A6F00E72847 /* CoreGraphics.framework in Frameworks */,
+				0C2D3A801B312EFE00E72847 /* Accelerate.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +72,8 @@
 		0CB1E9FD1B3024D30028F436 = {
 			isa = PBXGroup;
 			children = (
+				0C2D3A811B313A6F00E72847 /* CoreGraphics.framework */,
+				0C2D3A7F1B312EFE00E72847 /* Accelerate.framework */,
 				0CB1EA081B3024D30028F436 /* EffectTest */,
 				0CB1EA221B3024D30028F436 /* EffectTestTests */,
 				0CB1EA071B3024D30028F436 /* Products */,
@@ -89,6 +100,8 @@
 				0CB1EA161B3024D30028F436 /* Images.xcassets */,
 				0CB1EA181B3024D30028F436 /* LaunchScreen.xib */,
 				0CB1EA091B3024D30028F436 /* Supporting Files */,
+				0C2D3A7C1B312D9000E72847 /* ImageProcessing.h */,
+				0C2D3A7D1B312D9000E72847 /* ImageProcessing.mm */,
 			);
 			path = EffectTest;
 			sourceTree = "<group>";
@@ -219,6 +232,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0C2D3A7E1B312D9000E72847 /* ImageProcessing.mm in Sources */,
 				0CB1EA121B3024D30028F436 /* ViewController.m in Sources */,
 				0CB1EA0F1B3024D30028F436 /* AppDelegate.m in Sources */,
 				0CB1EA0C1B3024D30028F436 /* main.m in Sources */,
@@ -418,6 +432,7 @@
 				0CB1EA2B1B3024D30028F436 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		0CB1EA2C1B3024D30028F436 /* Build configuration list for PBXNativeTarget "EffectTestTests" */ = {
 			isa = XCConfigurationList;
@@ -426,6 +441,7 @@
 				0CB1EA2E1B3024D30028F436 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

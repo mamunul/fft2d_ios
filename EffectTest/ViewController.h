@@ -7,8 +7,15 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "ImageProcessing.h"
 
 @interface ViewController : UIViewController
+{
+
+	IBOutlet UIImageView *originalImageView;
+	IBOutlet UIImageView *processedImageView;
+
+}
 
 
 @end

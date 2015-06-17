@@ -1,13 +1,14 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8121.17" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8101.14"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -15,11 +16,68 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jji-kd-Gv6">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="800"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="T8k-RO-O9s">
+                                        <rect key="frame" x="0.0" y="-8" width="600" height="600"/>
+                                        <subviews>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="e" translatesAutoresizingMaskIntoConstraints="NO" id="dk1-g0-aVL">
+                                                <rect key="frame" x="150" y="8" width="275" height="413"/>
+                                            </imageView>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="e" translatesAutoresizingMaskIntoConstraints="NO" id="0dN-Xu-D1z">
+                                                <rect key="frame" x="150" y="429" width="275" height="413"/>
+                                            </imageView>
+                                        </subviews>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstItem="0dN-Xu-D1z" firstAttribute="top" secondItem="dk1-g0-aVL" secondAttribute="bottom" constant="8" id="D6m-qB-aqU"/>
+                                            <constraint firstAttribute="centerX" secondItem="dk1-g0-aVL" secondAttribute="centerX" constant="12.5" id="Oep-Id-9Br"/>
+                                            <constraint firstAttribute="centerX" secondItem="0dN-Xu-D1z" secondAttribute="centerX" constant="12.5" id="awS-1n-Icm"/>
+                                            <constraint firstItem="dk1-g0-aVL" firstAttribute="top" secondItem="T8k-RO-O9s" secondAttribute="top" constant="8" id="iG2-Yj-d2U"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="T8k-RO-O9s" firstAttribute="leading" secondItem="Jji-kd-Gv6" secondAttribute="leading" id="0mo-mO-j1f"/>
+                                    <constraint firstItem="T8k-RO-O9s" firstAttribute="leading" secondItem="Jji-kd-Gv6" secondAttribute="leading" id="4Rg-gy-StO"/>
+                                    <constraint firstItem="T8k-RO-O9s" firstAttribute="top" secondItem="Jji-kd-Gv6" secondAttribute="top" constant="-8" id="7VN-k9-RwS"/>
+                                    <constraint firstAttribute="height" secondItem="T8k-RO-O9s" secondAttribute="height" constant="200" id="Fzt-kt-wZw"/>
+                                    <constraint firstAttribute="bottom" secondItem="T8k-RO-O9s" secondAttribute="bottom" constant="208" id="Hxm-pX-drP"/>
+                                    <constraint firstItem="T8k-RO-O9s" firstAttribute="leading" secondItem="Jji-kd-Gv6" secondAttribute="leading" id="Nvg-sM-MGT"/>
+                                    <constraint firstAttribute="trailing" secondItem="T8k-RO-O9s" secondAttribute="trailing" id="O3y-qY-QHS"/>
+                                    <constraint firstItem="T8k-RO-O9s" firstAttribute="leading" secondItem="Jji-kd-Gv6" secondAttribute="leading" id="SiC-bC-lVc"/>
+                                    <constraint firstAttribute="width" secondItem="T8k-RO-O9s" secondAttribute="width" id="Xen-HU-TEP"/>
+                                    <constraint firstItem="T8k-RO-O9s" firstAttribute="leading" secondItem="Jji-kd-Gv6" secondAttribute="leading" id="ZOF-nf-Lsb"/>
+                                    <constraint firstAttribute="trailing" secondItem="T8k-RO-O9s" secondAttribute="trailing" id="fv8-zC-OGB"/>
+                                    <constraint firstItem="T8k-RO-O9s" firstAttribute="top" secondItem="Jji-kd-Gv6" secondAttribute="top" constant="-8" id="i39-hd-LKj"/>
+                                    <constraint firstItem="T8k-RO-O9s" firstAttribute="top" secondItem="Jji-kd-Gv6" secondAttribute="top" constant="-8" id="q9u-4a-QU6"/>
+                                    <constraint firstItem="T8k-RO-O9s" firstAttribute="centerX" secondItem="Jji-kd-Gv6" secondAttribute="centerX" id="xZL-M2-Crq"/>
+                                    <constraint firstItem="T8k-RO-O9s" firstAttribute="top" secondItem="Jji-kd-Gv6" secondAttribute="top" constant="-8" id="xew-zI-kTI"/>
+                                    <constraint firstAttribute="trailing" secondItem="T8k-RO-O9s" secondAttribute="trailing" id="zAD-jh-P06"/>
+                                </constraints>
+                            </scrollView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Jji-kd-Gv6" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="YHP-Be-jVT"/>
+                            <constraint firstAttribute="height" secondItem="Jji-kd-Gv6" secondAttribute="height" constant="-200" id="bsw-12-rep"/>
+                            <constraint firstAttribute="width" secondItem="Jji-kd-Gv6" secondAttribute="width" id="cAV-Xe-4JI"/>
+                            <constraint firstItem="Jji-kd-Gv6" firstAttribute="bottom" secondItem="wfy-db-euE" secondAttribute="top" constant="200" id="jeC-uX-lMf"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="originalImageView" destination="dk1-g0-aVL" id="Y20-nm-8Vi"/>
+                        <outlet property="processedImageView" destination="0dN-Xu-D1z" id="7fU-YT-XSj"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="603" y="446"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="e" width="275" height="413"/>
+    </resources>
 </document>
