@@ -25,17 +25,28 @@
 	
 	originalImageView.image = originalImage;
 	
+//	ShaderHelper *shaderHelper = [[ShaderHelper alloc] init];
 	
-	dispatch_async(dispatch_get_main_queue(), ^{
+
+
+	
+	dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(5 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+//		UIImage *image = [shaderHelper runShader:@"invert" OnImage:originalImage];
 		
 		UIImage *image = [[[ImageProcessing alloc] init] processImage:originalImage];
 		
-		NSLog(@"image:%@",NSStringFromCGSize(image.size));
+		
+		
 		processedImageView.image = image;
+		
+		NSLog(@"image2:%@",NSStringFromCGSize(image.size));
 	});
 	
 	
 }
+
+
+
 - (UIImage *)resizeImage:(UIImage *)image heightWidth:(float) maxWidthHeight
 {
 	

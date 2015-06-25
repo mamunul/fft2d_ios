@@ -10,6 +10,15 @@
 		0C2D3A7E1B312D9000E72847 /* ImageProcessing.mm in Sources */ = {isa = PBXBuildFile; fileRef = 0C2D3A7D1B312D9000E72847 /* ImageProcessing.mm */; };
 		0C2D3A801B312EFE00E72847 /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C2D3A7F1B312EFE00E72847 /* Accelerate.framework */; };
 		0C2D3A821B313A6F00E72847 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C2D3A811B313A6F00E72847 /* CoreGraphics.framework */; };
+		0C2D3A871B319B2D00E72847 /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C2D3A861B319B2D00E72847 /* OpenGLES.framework */; };
+		0C2E97021B3BFCEA003F4F96 /* hpfilter.vsh in Resources */ = {isa = PBXBuildFile; fileRef = 0C2E97011B3BFCEA003F4F96 /* hpfilter.vsh */; };
+		0C2E97041B3BFCF5003F4F96 /* hpfilter.fsh in Resources */ = {isa = PBXBuildFile; fileRef = 0C2E97031B3BFCF5003F4F96 /* hpfilter.fsh */; };
+		0C32AF5D1B36860000DBF49D /* invert.vsh in Sources */ = {isa = PBXBuildFile; fileRef = 0C32F7091B3295AE0026911B /* invert.vsh */; };
+		0C32AF5E1B36860000DBF49D /* invert.fsh in Sources */ = {isa = PBXBuildFile; fileRef = 0C32F70B1B3295D60026911B /* invert.fsh */; };
+		0C32AF631B36950000DBF49D /* GLKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C32AF621B36950000DBF49D /* GLKit.framework */; };
+		0C32F7081B328DCF0026911B /* ShaderHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C32F7071B328DCF0026911B /* ShaderHelper.m */; };
+		0C32F70A1B3295AE0026911B /* invert.vsh in Resources */ = {isa = PBXBuildFile; fileRef = 0C32F7091B3295AE0026911B /* invert.vsh */; };
+		0C32F70C1B3295D60026911B /* invert.fsh in Resources */ = {isa = PBXBuildFile; fileRef = 0C32F70B1B3295D60026911B /* invert.fsh */; };
 		0CB1EA0C1B3024D30028F436 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0CB1EA0B1B3024D30028F436 /* main.m */; };
 		0CB1EA0F1B3024D30028F436 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0CB1EA0E1B3024D30028F436 /* AppDelegate.m */; };
 		0CB1EA121B3024D30028F436 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0CB1EA111B3024D30028F436 /* ViewController.m */; };
@@ -34,6 +43,14 @@
 		0C2D3A7D1B312D9000E72847 /* ImageProcessing.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = ImageProcessing.mm; sourceTree = "<group>"; };
 		0C2D3A7F1B312EFE00E72847 /* Accelerate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accelerate.framework; path = System/Library/Frameworks/Accelerate.framework; sourceTree = SDKROOT; };
 		0C2D3A811B313A6F00E72847 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		0C2D3A861B319B2D00E72847 /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
+		0C2E97011B3BFCEA003F4F96 /* hpfilter.vsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = hpfilter.vsh; sourceTree = "<group>"; };
+		0C2E97031B3BFCF5003F4F96 /* hpfilter.fsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = hpfilter.fsh; sourceTree = "<group>"; };
+		0C32AF621B36950000DBF49D /* GLKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLKit.framework; path = System/Library/Frameworks/GLKit.framework; sourceTree = SDKROOT; };
+		0C32F7061B328DCF0026911B /* ShaderHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShaderHelper.h; sourceTree = "<group>"; };
+		0C32F7071B328DCF0026911B /* ShaderHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShaderHelper.m; sourceTree = "<group>"; };
+		0C32F7091B3295AE0026911B /* invert.vsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = invert.vsh; sourceTree = "<group>"; };
+		0C32F70B1B3295D60026911B /* invert.fsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = invert.fsh; sourceTree = "<group>"; };
 		0CB1EA061B3024D30028F436 /* EffectTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EffectTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0CB1EA0A1B3024D30028F436 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0CB1EA0B1B3024D30028F436 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -54,6 +71,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0C32AF631B36950000DBF49D /* GLKit.framework in Frameworks */,
+				0C2D3A871B319B2D00E72847 /* OpenGLES.framework in Frameworks */,
 				0C2D3A821B313A6F00E72847 /* CoreGraphics.framework in Frameworks */,
 				0C2D3A801B312EFE00E72847 /* Accelerate.framework in Frameworks */,
 			);
@@ -72,6 +91,8 @@
 		0CB1E9FD1B3024D30028F436 = {
 			isa = PBXGroup;
 			children = (
+				0C32AF621B36950000DBF49D /* GLKit.framework */,
+				0C2D3A861B319B2D00E72847 /* OpenGLES.framework */,
 				0C2D3A811B313A6F00E72847 /* CoreGraphics.framework */,
 				0C2D3A7F1B312EFE00E72847 /* Accelerate.framework */,
 				0CB1EA081B3024D30028F436 /* EffectTest */,
@@ -102,6 +123,12 @@
 				0CB1EA091B3024D30028F436 /* Supporting Files */,
 				0C2D3A7C1B312D9000E72847 /* ImageProcessing.h */,
 				0C2D3A7D1B312D9000E72847 /* ImageProcessing.mm */,
+				0C32F7061B328DCF0026911B /* ShaderHelper.h */,
+				0C32F7071B328DCF0026911B /* ShaderHelper.m */,
+				0C32F7091B3295AE0026911B /* invert.vsh */,
+				0C32F70B1B3295D60026911B /* invert.fsh */,
+				0C2E97011B3BFCEA003F4F96 /* hpfilter.vsh */,
+				0C2E97031B3BFCF5003F4F96 /* hpfilter.fsh */,
 			);
 			path = EffectTest;
 			sourceTree = "<group>";
@@ -213,6 +240,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				0CB1EA151B3024D30028F436 /* Main.storyboard in Resources */,
+				0C2E97041B3BFCF5003F4F96 /* hpfilter.fsh in Resources */,
+				0C2E97021B3BFCEA003F4F96 /* hpfilter.vsh in Resources */,
+				0C32F70C1B3295D60026911B /* invert.fsh in Resources */,
+				0C32F70A1B3295AE0026911B /* invert.vsh in Resources */,
 				0CB1EA1A1B3024D30028F436 /* LaunchScreen.xib in Resources */,
 				0CB1EA171B3024D30028F436 /* Images.xcassets in Resources */,
 			);
@@ -232,6 +263,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0C32AF5D1B36860000DBF49D /* invert.vsh in Sources */,
+				0C32AF5E1B36860000DBF49D /* invert.fsh in Sources */,
+				0C32F7081B328DCF0026911B /* ShaderHelper.m in Sources */,
 				0C2D3A7E1B312D9000E72847 /* ImageProcessing.mm in Sources */,
 				0CB1EA121B3024D30028F436 /* ViewController.m in Sources */,
 				0CB1EA0F1B3024D30028F436 /* AppDelegate.m in Sources */,

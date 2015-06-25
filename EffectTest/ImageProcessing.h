@@ -9,7 +9,8 @@
 #import <Foundation/Foundation.h>
 #import <Accelerate/Accelerate.h>
 #import <UIKit/UIKit.h>
-#import <CoreGraphics/CoreGraphics.h>
+#import "ShaderHelper.h"
+
 
 @interface ImageProcessing : NSObject
 

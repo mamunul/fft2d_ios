@@ -8,12 +8,14 @@
 
 #import <UIKit/UIKit.h>
 #import "ImageProcessing.h"
+#import "ShaderHelper.h"
 
 @interface ViewController : UIViewController
 {
 
 	IBOutlet UIImageView *originalImageView;
 	IBOutlet UIImageView *processedImageView;
+	IBOutlet GLKView *glkview;
 
 }
 

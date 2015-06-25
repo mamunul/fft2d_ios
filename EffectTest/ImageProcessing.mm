@@ -38,11 +38,13 @@
 	
 	height = originalImage.size.height;
 	
+	originalImage = [self invertImage:originalImage];
+	
 	[self readImage:originalImage];
 	
 	[self fftImage];
 	
-	[self hpimage];
+//	[self hpimage];
 	
 	UIImage *image = [self ifftImage];
 
@@ -58,7 +60,7 @@
 	
 	bytePtr = (unsigned char *)[data bytes];
 	
-	int byteIndex = 0;
+	UInt32 byteIndex = 0;
 
 	
 	UInt32 N = log2(width*height);
@@ -75,8 +77,9 @@
 	in_fft_a.realp = ( float* ) malloc ( numElements * sizeof ( float ) );
 	in_fft_a.imagp = ( float* ) malloc ( numElements * sizeof ( float ) );
 
+	NSLog(@"loop started");
 	//Copy RGB values into rawData
-	for(int i = 0;i < width * height; ++i)
+	for(UInt32 i = 0;i < width * height; ++i)
 	{
 		in_fft_r.realp[i] = (float)bytePtr[byteIndex]/255;
 		in_fft_r.imagp[i] = 0;
@@ -90,14 +93,16 @@
 		byteIndex +=4;
 	}
 	
-	
+		NSLog(@"loop ended");
 
 }
 
--(void) invertImage{
+-(UIImage *) invertImage:(UIImage *) image{
+
+	UIImage *processedImage = [[[ShaderHelper alloc] init] runShader:@"invert" OnImage:image];
 
 
-
+	return processedImage;
 }
 
 -(void) fftImage{
@@ -222,8 +227,9 @@
 	
 	bytePtr = ( unsigned char * ) malloc ( width * height*4 * sizeof ( unsigned char ) );
 	
-	int byteIndex = 0;
-	for(int i = 0;i < width * height; ++i)
+		NSLog(@"loop started");
+	UInt32 byteIndex = 0;
+	for(UInt32 i = 0;i < width * height; ++i)
 	{
 		bytePtr[byteIndex] = (char)(in_fft_r.realp[i]*255);
 	
@@ -234,6 +240,7 @@
 		bytePtr[byteIndex+3]= (char)(in_fft_a.realp[i]*255);
 		byteIndex+=4;
 	}
+		NSLog(@"loop ended");
 	
 	free(out_ifft_r.realp);
 	free(out_ifft_r.imagp);
@@ -256,6 +263,13 @@
 
 -(void)hpimage{
 
+
+//	UIImage *processedImage = [[[ShaderHelper alloc] init] runShader:@"hpfilter" OnImage:image];
+	
+	
+//	return processedImage;
+
+	
 
 
 }
